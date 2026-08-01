@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "manta-hash"
+version = "1.0.0"
+description = "Compute file hashes using multiple algorithms (md5, sha1, sha256, sha512, blake2b)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Bobby Hansen Jr.", email = "bobby@hillcountryventures.co"},
+]
+keywords = ["cli", "utility", "manta"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/jrbobbyhansen-pixel/manta-hash"
+Repository = "https://github.com/jrbobbyhansen-pixel/manta-hash.git"
+Issues = "https://github.com/jrbobbyhansen-pixel/manta-hash/issues"
+
+[project.scripts]
+manta-hash = "manta_hash:main"
+
+[tool.setuptools.packages.find]
+include = ["manta_hash*"]
